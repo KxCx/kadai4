@@ -1,12 +1,12 @@
 #!/bin/bash
 
 #2と4を入れてテストを実行する
-./saidai.sh 2 4 > ./tempdir/result-$$
-echo "2" > ./tempdir/ans-$$
+res=$(./saidai.sh 2 4)
 
-diff ./tempdir/ans-$$ ./tempdir/result-$$ || exit 1
-
-
-echo "Complete!"
-
-rm -rf ./tempdir
+if [ $res -eq 2 ]
+then
+	exit 0
+else
+	echo "ERROR"
+	exit 1
+fi
