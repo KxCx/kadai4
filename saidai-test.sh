@@ -8,3 +8,5 @@ diff ./tempdir/ans-$$ ./tempdir/result-$$ || exit 1
 
 
 echo "Complete!"
+
+rm -rf ./tempdir
