@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #2と4を入れてテストを実行する
-./saidai.sh 2 4 > /tmp/result-$$
-echo "2" > /tmp/ans-$$
+./saidai.sh 2 4 > ./tempdir/result-$$
+echo "2" > ./tempdir/ans-$$
 
-diff /tmp/ans-$$ /tmp/result-$$ || exit 1
+diff ./tempdir/ans-$$ ./tempdir/result-$$ || exit 1
 
 
 echo "Complete!"
