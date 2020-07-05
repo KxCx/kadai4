@@ -4,4 +4,6 @@ script:
         - echo Trivis CI test in .travis.yml
         - ./saidai-test.sh
         - ./saidai-test2.sh
+        - ./saidai-test3.sh
+
 
