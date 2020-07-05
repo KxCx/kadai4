@@ -1,0 +1,6 @@
+language: bash
+script:
+        - echo New File DetNew File Detected..
+        - echo Trivis CI test in .travis.yml
+        - ./saidai-test.sh
+
